@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IntToString" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VPd-j2-BAf">
+                                <rect key="frame" x="62" y="342.33333333333331" width="290" height="51.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIo-2B-UO7">
+                                <rect key="frame" x="82.666666666666671" y="433.66666666666669" width="248.66666666666663" height="37"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Translate"/>
+                                <connections>
+                                    <action selector="translatebtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EH7-yr-wfc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmc-NC-8Jr">
+                                <rect key="frame" x="41.333333333333343" y="280.66666666666669" width="331.33333333333326" height="21.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VPd-j2-BAf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="70%" id="2Wu-Bx-gJQ"/>
+                            <constraint firstItem="wIo-2B-UO7" firstAttribute="top" secondItem="VPd-j2-BAf" secondAttribute="bottom" constant="40" id="549-po-SQm"/>
+                            <constraint firstItem="VPd-j2-BAf" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="OS7-4s-DU1"/>
+                            <constraint firstItem="wIo-2B-UO7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="60%" id="UFb-qk-iwG"/>
+                            <constraint firstItem="VPd-j2-BAf" firstAttribute="top" secondItem="cmc-NC-8Jr" secondAttribute="bottom" constant="40" id="e4K-Ev-uJ9"/>
+                            <constraint firstItem="cmc-NC-8Jr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nYF-Tg-oc5"/>
+                            <constraint firstItem="cmc-NC-8Jr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="80%" id="tCu-64-Xou"/>
+                            <constraint firstItem="VPd-j2-BAf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="7%" id="tRr-Eq-jKM"/>
+                            <constraint firstItem="wIo-2B-UO7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="5%" id="u67-dg-piU"/>
+                            <constraint firstItem="VPd-j2-BAf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uLn-E8-cUx"/>
+                            <constraint firstItem="wIo-2B-UO7" firstAttribute="centerX" secondItem="VPd-j2-BAf" secondAttribute="centerX" id="vZc-Vv-d4j"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbl" destination="cmc-NC-8Jr" id="fp2-rD-hbO"/>
+                        <outlet property="translatebtn" destination="wIo-2B-UO7" id="xac-uZ-Sex"/>
+                        <outlet property="txtField" destination="VPd-j2-BAf" id="h3y-h8-mGA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="81"/>
+        </scene>
+    </scenes>
+</document>
